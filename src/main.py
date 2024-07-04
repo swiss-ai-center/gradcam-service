@@ -243,7 +243,7 @@ async def lifespan(app: FastAPI):
 
 
 api_description = """GradCAM XAI
-Give a visual explanation using GradCAM.
+Give a visual explanation of sport classification using GradCAM.
 """
 api_summary = """GradCAM XAI service
 Give a visual explanation for classification decisions of sport images using GradCAM.
