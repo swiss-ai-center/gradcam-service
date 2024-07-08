@@ -15,6 +15,7 @@ services:
         # Activate the virtual environment
         source .venv/bin/activate &&
         # Install the dependencies
+        pip install torch==2.3.1 torchvision==0.18.1 --index-url https://download.pytorch.org/whl/cpu
         pip install -r requirements.txt -r requirements-all.txt &&
         # Run the service
         cd src &&
