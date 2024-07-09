@@ -116,7 +116,9 @@ class MyService(Service):
         model.to(device)
 
         # Explain image
-        preprocess = lambda ims: torch.stack([test_transform()(im.to_pil()) for im in ims])
+        def preprocess(ims):
+            return torch.stack([test_transform()(im.to_pil()) for im in ims])
+
         gradcam = GradCAM(
             model=model,
             target_layer=model.model.features[-1][0],

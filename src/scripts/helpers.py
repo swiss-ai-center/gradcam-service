@@ -1,5 +1,6 @@
 from torchvision import transforms
 
+
 def train_transform():
     transform = transforms.Compose([
         transforms.RandomHorizontalFlip(p=0.1),
