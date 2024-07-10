@@ -1,5 +1,5 @@
-# GradCAM XAI
+# GradCAM
 
 This service provides visual explanations for classification decisions of sport images using GradCAM.
 
-_Check the [related documentation](https://swiss-ai-center.github.io/swiss-ai-center/reference/gradcam-xai) for more information._
+_Check the [related documentation](https://docs.swiss-ai-center.ch/reference/services/gradcam/) for more information._

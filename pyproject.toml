@@ -1,5 +1,5 @@
 [project]
-name = "gradcam-xai"
+name = "gradcam"
 
 [tool.pytest.ini_options]
 pythonpath = [".", "src"]

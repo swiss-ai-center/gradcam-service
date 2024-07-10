@@ -39,7 +39,7 @@ settings = get_settings()
 
 class MyService(Service):
     """
-    GradCAM XAI Service
+    GradCAM Service
     """
 
     # Any additional fields must be excluded for Pydantic to work
@@ -48,8 +48,8 @@ class MyService(Service):
 
     def __init__(self):
         super().__init__(
-            name="GradCAM XAI",
-            slug="gradcam-xai",
+            name="GradCAM",
+            slug="gradcam",
             url=settings.service_url,
             summary=api_summary,
             description=api_description,
@@ -82,7 +82,7 @@ class MyService(Service):
                 ),
             ],
             has_ai=True,
-            docs_url="https://docs.swiss-ai-center.ch/reference/services/gradcam-xai/",
+            docs_url="https://docs.swiss-ai-center.ch/reference/services/gradcam/",
         )
         self._logger = get_logger(settings)
         self._zip_path = "./gradcam_xai"
@@ -244,17 +244,17 @@ async def lifespan(app: FastAPI):
         await service_service.graceful_shutdown(my_service, engine_url)
 
 
-api_description = """GradCAM XAI
+api_description = """GradCAM
 Give a visual explanation of sport classification using GradCAM.
 """
-api_summary = """GradCAM XAI service
+api_summary = """GradCAM service
 Give a visual explanation for classification decisions of sport images using GradCAM.
 """
 
 # Define the FastAPI application with information
 app = FastAPI(
     lifespan=lifespan,
-    title="GradCAM XAI Service API.",
+    title="GradCAM Service API.",
     description=api_description,
     version="0.0.1",
     contact={
