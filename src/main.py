@@ -73,8 +73,8 @@ class MyService(Service):
             ],
             tags=[
                 ExecutionUnitTag(
-                    name=ExecutionUnitTagName.EXPLAINABlE_AI,
-                    acronym=ExecutionUnitTagAcronym.EXPLAINABlE_AI,
+                    name=ExecutionUnitTagName.EXPLAINABLE_AI,
+                    acronym=ExecutionUnitTagAcronym.EXPLAINABLE_AI,
                 ),
                 ExecutionUnitTag(
                     name=ExecutionUnitTagName.IMAGE_RECOGNITION,
