@@ -29,6 +29,15 @@ from omnixai.explanations.image.pixel_importance import _plot_pixel_importance_h
 
 settings = get_settings()
 
+api_description = """GradCAM
+Give a visual explanation of sport classification using GradCAM.
+"""
+api_summary = """GradCAM service
+Give a visual explanation for classification decisions of sport images using GradCAM.
+"""
+api_title = "GradCAM Service API."
+version = "0.0.1"
+
 
 class MyService(Service):
     """
