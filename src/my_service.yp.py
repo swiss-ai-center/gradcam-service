@@ -1,16 +1,10 @@
 from common_code.config import get_settings
-from common_code.http_client import HttpClient
 from common_code.logger.logger import get_logger, Logger
-from common_code.service.controller import router as service_router
-from common_code.service.service import ServiceService
-from common_code.storage.service import StorageService
-from common_code.tasks.controller import router as tasks_router
-from common_code.tasks.service import TasksService
-from common_code.tasks.models import TaskData
 from common_code.service.models import Service
 from common_code.service.enums import ServiceStatus
 from common_code.common.enums import FieldDescriptionType, ExecutionUnitTagName, ExecutionUnitTagAcronym
 from common_code.common.models import FieldDescription, ExecutionUnitTag
+from common_code.tasks.models import TaskData
 # Imports required by the service's model
 import torch
 import json
@@ -194,4 +188,3 @@ class MyService(Service):
                 type=FieldDescriptionType.APPLICATION_ZIP
             )
         }
-
