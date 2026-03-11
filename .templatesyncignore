@@ -1,0 +1,8 @@
+src/my_service.py
+README.md
+requirements.txt
+pyproject.toml
+.gitignore
+Dockerfile
+development.Dockerfile
+kubernetes/stateful.yml
