@@ -5,5 +5,5 @@ pyproject.toml
 .gitignore
 Dockerfile
 development.Dockerfile
-docker_compose.yml
+docker-compose.yml
 kubernetes/stateful.yml
