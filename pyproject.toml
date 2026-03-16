@@ -1,6 +1,17 @@
 [project]
 name = "gradcam"
+version = "1.0.0"
 
+requires-python = "==3.10.*"
+dependencies = [
+    "common-code[test] @ git+https://github.com/swiss-ai-center/common-code.git@main",
+    "omnixai @ git+https://github.com/salesforce/OmniXAI.git@v1.3.2",
+    "pandas~=2.0.3",
+    "opencv-python~=4.10.0.84",
+    "torch==2.3.1",
+    "torchvision==0.18.1",
+    "setuptools==81.0.0",
+]
 [tool.pytest.ini_options]
 pythonpath = [".", "src"]
 addopts = "--cov-config=.coveragerc --cov-report xml --cov-report term-missing --cov=./src"
